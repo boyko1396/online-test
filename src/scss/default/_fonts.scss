@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Commissioner';
+    src: url('../fonts/Commissioner-Regular.eot');
+    src: url('../fonts/Commissioner-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Commissioner-Regular.woff2') format('woff2'),
+         url('../fonts/Commissioner-Regular.woff') format('woff'),
+         url('../fonts/Commissioner-Regular.ttf') format('truetype'),
+         url('../fonts/Commissioner-Regular.svg#Commissioner-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('../fonts/Commissioner-Medium.eot');
+    src: url('../fonts/Commissioner-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Commissioner-Medium.woff2') format('woff2'),
+         url('../fonts/Commissioner-Medium.woff') format('woff'),
+         url('../fonts/Commissioner-Medium.ttf') format('truetype'),
+         url('../fonts/Commissioner-Medium.svg#Commissioner-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('../fonts/Commissioner-Bold.eot');
+    src: url('../fonts/Commissioner-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Commissioner-Bold.woff2') format('woff2'),
+         url('../fonts/Commissioner-Bold.woff') format('woff'),
+         url('../fonts/Commissioner-Bold.ttf') format('truetype'),
+         url('../fonts/Commissioner-Bold.svg#Commissioner-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

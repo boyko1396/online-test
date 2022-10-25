@@ -1,0 +1,104 @@
+.thanks-main {
+    background: url(../images/thanks-bg-1.jpg) center top no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-3);
+    line-height: 1.23;
+    color: $color-white-1;
+    text-align: center;
+    &__container {
+    }
+    &__title {
+        margin: 0 0 20px;
+        text-transform: uppercase;
+        @media (max-width: $sm) {
+            font-size: 20px;
+        }
+    }
+    &__subtitle {
+        margin: 0 0 20px;
+        font-weight: normal;
+        font-size: var(--fs-2);
+        @media (max-width: $sm) {
+            font-size: 20px;
+        }
+    }
+    &__result {
+        margin: 0 0 30px;
+        font-weight: bold;
+        font-size: 122px;
+        color: $color-accent-1;
+        @media (max-width: $sm) {
+            font-size: 70px;
+        }
+    }
+    &__appeal {
+        margin: 0 0 20px;
+        font-weight: bold;
+        font-size: var(--fs-2);
+        text-transform: uppercase;
+        @media (max-width: $sm) {
+            font-size: 20px;
+        }
+    }
+    &__share {
+        margin: 0 0 30px;
+        font-weight: bold;
+        color: $color-accent-1;
+        text-transform: uppercase;
+        @media (max-width: $sm) {
+            font-size: 16px;
+        }
+    }
+    &__appeal-phone {
+        margin: 0 0 10px;
+        font-weight: bold;
+        font-size: var(--fs-2);
+        @media (max-width: $sm) {
+            font-size: 20px;
+        }
+    }
+    &__appeal-subtitle {
+        margin: 0 0 50px;
+        font-weight: normal;
+        @media (max-width: $sm) {
+            font-size: 16px;
+        }
+    }
+    &__appeal-content {
+        background: rgba($color-white-1, .8);
+        margin: 0 0 30px;
+        padding: 30px;
+        font-size: var(--fs-default);
+        line-height: 1.5;
+        color: $color-black-1;
+        border-radius: 10px;
+        @media (max-width: $sm) {
+            margin: 0 var(--gap-fluid-) 30px;
+            padding: 20px 15px;
+            font-size: 16px;
+        }
+        p {
+            margin: 0 0 10px;
+        }
+    }
+    &__appeal-admin {
+        margin: 20px 0 0 !important;
+        font-weight: bold;
+        font-size: 14px;
+        color: $color-accent-2;
+    }
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__btn-next {
+        @media (max-width: $xs) {
+            width: 100%;
+        }
+    }
+}

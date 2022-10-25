@@ -1,0 +1,24 @@
+include includes/head.pug
+
+body
+
+  #rootwizard
+    main(role="main").thanks-main
+      .container.thanks-main__container
+        h1.thanks-main__title Спасибо за прохождение нашего&nbsp;теста!
+        h2.thanks-main__subtitle Процент верных ответов составил:
+        .thanks-main__result 82%
+        .thanks-main__appeal Самое время начинать зарабатывать с помощью трейдинга
+        .thanks-main__share Поделитесь своим результатом с друзьями
+        .thanks-main__appeal-phone Не пропустите наш звонок!
+        .thanks-main__appeal-subtitle С вами через несколько минут свяжется наш трейдер, чтобы предложить гарантированный заработок на рынке
+        .thanks-main__appeal-content
+          p Мы очень надеемся, что наш тест дал вам необходимое понимание того, насколько вы готовы к тому, чтобы сделать трейдинг своей профессией.
+          p Самое главное — результаты всех ваших действий будут проанализированы нашими экспертами.<br>Исходя из результатов анализа Вам будет предложен индивидуальный пакет для успешной и плодовитой работы.
+          p.thanks-main__appeal-admin С уважением, команда tradingtest.ru
+        footer.thanks-main__footer
+          button(type="button").btn.btn--size-md.btn--theme-accent.thanks-main__btn-next
+            span.btn__inner
+              svg.icon.btn__icon.btn__icon--ltr
+                use(xlink:href="images/sprite.svg#arrow-right")
+              span.btn__title Пройти тест

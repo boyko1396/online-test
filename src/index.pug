@@ -1,0 +1,264 @@
+include includes/head.pug
+
+body
+
+  #rootwizard
+    main(role="main").main
+      .container.main__container
+        a(href="/" title="На главную").main__brand Онлайн-тест
+        .row.main__row
+          .row__col--6.main__col-content
+            .main__content
+              h1.main__title Вы хотите стать трейдером?
+              ul.main__info
+                li <span>7</span> вопросов
+                li <span>2</span> минуты
+              .content.main__text
+                p Вы приняли решение попробовать себя в качестве трейдера на финансовом рынке. Наш тест, который состоит всего из 7 вопросов, позволит понять, получится ли из вас настоящий трейдер прямо сейчас или вам стоит сначала подтянуть свои знания и навыки?
+          .row__col--6.main__col-form
+            .main-form-b
+              article.tab-pane.main-form-b__tab.active#tab1
+                header.main-form-b__header
+                  p(data-question="1").tasks-number.main-form-b__pager Вопрос №1
+                  h3.main-form-b__title Почему Вы заинтересовались трейдингом?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el Нравится эта сфера
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el Хочу начать стабильно зарабатывать
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el.active-item Рассматриваю трейдинг, как увлекательное хобби
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el Инвестировать свободный капитал
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab2
+                header.main-form-b__header
+                  p(data-question="2").tasks-number.main-form-b__pager Вопрос №2
+                  h3.main-form-b__title Сколько времени Вы готовы тратить на трейдинг?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el Не больше часа в ежедневно
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el Всего 3-4 часа в неделю
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el Вечером в будни и выходные
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el Столько, сколько нужно
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab3
+                header.main-form-b__header
+                  p(data-question="3").tasks-number.main-form-b__pager Вопрос №3
+                  h3.main-form-b__title Имеется ли у Вас опыт построения собственного бизнеса?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el Да, вполне успешный опыт
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el Нет такого опыта, но я бы хотел его приобрести
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el Да, негативный опыт 
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el Нет, подопоного опыта не имею
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab4
+                header.main-form-b__header
+                  p(data-question="4").tasks-number.main-form-b__pager Вопрос №4
+                  h3.main-form-b__title Как Вы принимаете важные решения?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el Спонтанно
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el Изучаю и анализирую максимум информации
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el Консультируюсь с экспертами в своей области
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el Советуюсь с друзьями или близкими
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab5
+                header.main-form-b__header
+                  p(data-question="5").tasks-number.main-form-b__pager Вопрос №5
+                  h3.main-form-b__title Какие типы финансовых рынков Вы знаете?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el Рынок ценных бумаг
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el Валютный рынок
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el Знаю все типы финансовых рынков
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el Никогда не было опыта с финансовыми рынками
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab6
+                header.main-form-b__header
+                  p(data-question="6").tasks-number.main-form-b__pager Вопрос №6
+                  h3.main-form-b__title Сколько Вы хотите инвестировать на биржу?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el 100 долларов
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el 500 долларов
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el 2,000 долларов
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el Свыше 10,000 долларов
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab7
+                header.main-form-b__header
+                  p(data-question="7").tasks-number.main-form-b__pager Вопрос №7
+                  h3.main-form-b__title Какая прибыль Вас интересует?
+                .row.main-form-b__row
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="1").tasks-field-wrap.control-el.main-form-b__control-el Больше 10,000 долларов в год
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="2").tasks-field-wrap.control-el.main-form-b__control-el 5,000 долларов ежемесячно
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="3").tasks-field-wrap.control-el.main-form-b__control-el Не меньше 100% в год
+                  .row__col--6.main-form-b__col
+                    button(type="button" data-answer="4").tasks-field-wrap.control-el.main-form-b__control-el 4-7% в месяц от объема капитала
+                  .error-form.main-form-b__error Пожалуйста, выберите вариант ответа!
+                footer.main-form-b__footer
+                  button(type="button").btn.btn--size-md.btn--theme-gray.main-form-b__footer-btn-prev
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--rtl
+                        use(xlink:href="images/sprite.svg#arrow-left")
+                      span.btn__title Назад
+                  button(type="button").btn.btn--size-md.btn--theme-accent.main-form-b__footer-btn-next
+                    span.btn__inner
+                      svg.icon.btn__icon.btn__icon--ltr
+                        use(xlink:href="images/sprite.svg#arrow-right")
+                      span.btn__title Следующий вопрос
+              article.tab-pane.main-form-b__tab#tab8
+                header.main-form-b__header
+                  p.tasks-number.main-form-b__pager Результаты теста
+                  h3.main-form-b__title Введите данные для получения результатов
+                  form(novalidate="novalidate").form.main-form-el
+                    .form-line.main-form-el__line
+                      input(type="text" name="name" id="name" autocomplete="nope" required placeholder="Как вас зовут?").form-field.input-el.form-line__input
+                      label(for="name")#name-error.error-form.form-line__error Введите мин. 2 символа
+                    .form-line.main-form-el__line
+                      input(type="tel" name="phone" id="phone" autocomplete="nope" required pattern="\d{8,16}" maxlength="16" placeholder="Номер телефона").form-field.input-el.form-line__input
+                      label(for="name")#phone-error.error-form.form-line__error Некорректный телефон
+                    .form-line.main-form-el__line
+                      input(type="email" name="email" id="email" autocomplete="nope" required placeholder="Электронная почта").form-field.input-el.form-line__input
+                      label(for="email")#email-error.error-form.form-line__error Некорректный email
+                    button(type="submit").form-button.btn.btn--size-md.btn--theme-accent.main-form-el__btn
+                      span.btn__inner
+                        svg.icon.btn__icon.btn__icon--ltr
+                          use(xlink:href="images/sprite.svg#arrow-right")
+                        span.btn__title Получить результаты
+                    footer.main-form-el__footer
+                      p.main-form-el__footer-text SMS с результатом вашего теста придет на указанный номер телефона
+                      p.main-form-el__footer-text Мы гарантируем безопасность введенной вами информации
+
+    footer.footer
+      .container.footer__container
+        .footer__contacts
+          p.footer__contacts-title Мы не передаем Ваши данные третьим лицам
+          .footer__contacts-list
+            a(href="tel:+74993468964").contacts-link.footer__contacts-link
+              svg.icon.contacts-link__icon
+                use(xlink:href="images/sprite.svg#phone")
+              span.contacts-link__title +7 (499) 34-689-64
+            a(href="mailto:support@tradingtest.ru").contacts-link.footer__contacts-link
+              svg.icon.contacts-link__icon
+                use(xlink:href="images/sprite.svg#email")
+              span.contacts-link__title support@tradingtest.ru
+        .row.footer__row
+          .row__col--4.footer__col.footer__col--terms
+            p.footer__text.footer__text--terms
+              a(href="#") Условия пользования
+          .row__col--4.footer__col.footer__col--copyright
+            p.footer__text.footer__text--copyright «Online trader-test»<br>tradingtest.ru © 2022
+          .row__col--4.footer__col.footer__col--privacy
+            p.footer__text.footer__text--privacy Все права защищены<br>
+
+#modal-sms.modal.modal--sms
+  .modal__inner
+    .modal__center
+      button.js-modal-close.btn-close.modal__center-close
+        svg.icon.btn-close__icon
+          use(xlink:href="images/sprite.svg#close")
+      form(novalidate="novalidate").popup-form.modal-form
+        p.modal-form__title Подтверждение
+        p.modal-form__subtitle На ваш телефон 351456456456 был отправлен код подтверждения
+      .form-line.modal-form__line
+        input(type="text" name="code" id="sms-code" autocomplete="nope" required placeholder="Введите код из СМС").form-field.input-el.form-line__input
+        label(for="sms-code")#codeError.error-form.form-line__error Неверный код
+      footer.modal-form__footer
+        button(type="button")#change-number.btn.btn--size-md.btn--theme-gray.modal-form__footer-btn-prev
+          span.btn__inner
+            svg.icon.btn__icon.btn__icon--rtl
+              use(xlink:href="images/sprite.svg#arrow-left")
+            span.btn__title Изменить номер
+        button(type="button")#res.btn.btn--size-md.btn--theme-accent.modal-form__footer-btn-next
+          span.btn__inner
+            svg.icon.btn__icon.btn__icon--ltr
+              use(xlink:href="images/sprite.svg#arrow-right")
+            span.btn__title Получить результаты
+
+  include includes/foot.pug

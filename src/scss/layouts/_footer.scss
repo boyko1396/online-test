@@ -1,0 +1,88 @@
+.footer {
+    padding: 50px 0;
+    color: $color-gray-1;
+    @media (max-width: $sm) {
+        padding: 0 0 30px;
+    }
+    &__container {
+        position: relative;
+    }
+    &__contacts {
+        margin: 0 0 100px;
+        @media (max-width: $sm) {
+            margin-bottom: 50px;
+        }
+        &-title {
+            margin: 0 0 50px;
+            font-weight: bold;
+            font-size: var(--fs-3);
+            line-height: 1.2;
+            color: $color-accent-2;
+            @media (max-width: $sm) {
+                margin-bottom: 30px;
+            }
+        }
+        &-list {
+            margin: -12px -50px;
+            display: flex;
+            flex-wrap: wrap;
+            @media (max-width: $sm) {
+                margin-right: -20px;
+                margin-left: -20px;
+            }
+        }
+        &-link {
+            margin: 12px 50px;
+            @media (max-width: $sm) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__col {
+        &--terms {
+            @media (max-width: $sm) {
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+        }
+        &--copyright {
+            @media (max-width: $sm) {
+                max-width: 100%;
+                margin-bottom: 28px;
+                flex-basis: 100%;
+                order: -1;
+            }
+        }
+        &--privacy {
+            @media (max-width: $sm) {
+                max-width: 50%;
+                flex-basis: 50%;
+            }
+        }
+    }
+    &__text {
+        margin: 0;
+        line-height: 1.8;
+        a {
+            transition: all .4s;
+            transform-property: color;
+            &:hover {
+                text-decoration: none;
+                color: $color-black-1;
+            }
+        }
+        &--terms {
+        }
+        &--copyright {
+            text-align: center;
+        }
+        &--privacy {
+            text-align: right;
+        }
+    }
+}

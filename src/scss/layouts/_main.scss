@@ -1,0 +1,105 @@
+.main {
+    min-height: 46vw;
+    padding: 100px 0;
+    color: $color-white-1;
+    position: relative;
+    @media (max-width: $lg) {
+        padding: 50px 0;
+    }
+    &:before {
+        background: url(../images/main-bg-1.jpg) center bottom no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-width: 1920px;
+        height: 1024px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: -1;
+    }
+    &__container {
+    }
+    &__brand {
+        margin: 0 0 100px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: var(--fs-2);
+        line-height: 1.23;
+        text-transform: uppercase;
+        vertical-align: top;
+        transition: all .4s;
+        transition-property: opacity;
+        @media (max-width: $lg) {
+            margin-bottom: 50px;
+        }
+        @media (max-width: $sm) {
+            margin-bottom: 30px;
+        }
+        &:hover {
+            text-decoration: none;
+            opacity: .6;
+        }
+    }
+    &__row {
+    }
+    &__col-content {
+        @media (max-width: $lg) {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    &__col-form {
+        @media (max-width: $lg) {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    &__content {
+        max-width: 600px;
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        margin: 0 0 28px;
+        line-height: 1.23;
+        text-transform: uppercase;
+        @media (max-width: $sm) {
+            margin-bottom: 8px;
+        }
+    }
+    &__info {
+        margin: 0 -12px;
+        padding: 0 0 38px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        @media (max-width: $sm) {
+            padding-bottom: 18px;
+        }
+        li {
+            max-width: 50%;
+            margin: 0;
+            padding: 12px;
+            flex: 0 0 50%;
+            font-size: var(--fs-2);
+            span {
+                font-weight: bold;
+                font-size: var(--fs-1);
+                color: $color-accent-1;
+            }
+        }
+    }
+    &__text {
+        font-size: var(--fs-3);
+        color: $color-white-2;
+        @media (max-width: $lg) {
+            margin: 0 0 70px;
+        }
+        @media (max-width: $sm) {
+            margin-bottom: 50px;
+        }
+    }
+}
