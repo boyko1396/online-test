@@ -17,6 +17,7 @@ body {
     color: $color-black-1;;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
     &.is-menu-opened {
         @media (max-width: $lg) {
             overflow: hidden;
