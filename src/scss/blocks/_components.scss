@@ -180,21 +180,6 @@ svg,
     overflow: hidden;
 }
 
-.logo {
-    display: inline-block;
-    font-size: 0;
-    cursor: pointer;
-    &--size-md {
-        width: 160px;
-        height: 40px;
-    }
-    &__img {
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-}
-
 .content {
     line-height: 1.5;
     & > :first-child {
@@ -438,9 +423,21 @@ svg,
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $xs) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
         &-btn-prev {
+            @media (max-width: $xs) {
+            }
         }
         &-btn-next {
+            @media (max-width: $xs) {
+                max-width: 100%;
+                margin-bottom: 30px;
+                flex: 0 0 100%;
+                order: -1;
+            }
         }
     }
 }
